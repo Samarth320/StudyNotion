@@ -22,7 +22,7 @@ const OTPSchema=new mongoose.Schema({
 //should be written before exporting
 async function sendVerificationEmail(email, otp) {
     try{
-        const mailResponse = await mailSender(email,"Verification Email from codeWay",otp);
+        const mailResponse = await mailSender(email,"Verification Email from StudyNotion",otp);
     }
     catch(error){
         throw error;
